@@ -16,7 +16,7 @@
 <div class="container">
   <div class="card-container">
     <div class="card">
-      <p>Bonjour à tous, j'espère que vous allez bien.</p>
+      <p>Salut à tous, j'espère que vous allez bien.</p>
     </div>
     <div class="card">
       <p>Et que vous avez aimé la session des programmeurs.</p>
@@ -28,13 +28,16 @@
         <p>Les webmasters !!!!</p>
     </div>
     <div class="card">
-        <p>Les webmasters sont chargés de la conception et de la maintenance des sites web. Nous nous servons principalement des langages tels que HTML, CSS, JavaScript, PHP et SQL.</p>
+        <p>Les webmasters sont chargés de la conception et de la maintenance des sites web. Nous nous servons principalement des langages tels que HTML, CSS, JavaScript, PHP et SQL, ou d'autres outils de creation comme bootstrap, wordpress et shopify.</p>
     </div>
     <div class="card">
         <p>Je laisserai le lien d'un document à la fin que vous téléchargerez pour connaître les bases de HTML et CSS.</p>
     </div>
     <div class="card">
         <p>Vous devez retenir un maximum d'informations de ce document, surtout les pages 73 à 79.</p>
+    </div>
+    <div class="card">
+        <p>Un maximum j'ai dis !</p>
     </div>
     <div class="card">
         <p>Ensuite, en vous servant de ce que vous aurez appris, vous me rendrez les travaux suivants :</p>
@@ -49,7 +52,13 @@
         <p>Vous compresserez vos travaux dans un fichier RAR pour me l'envoyer sur WhatsApp.</p>
     </div>
     <div class="card">
+        <p>Pour les deux exercice faites votre maximum pour me rendre quelque chose d'esthetique, de beau et de vendable</p>
+    </div>
+    <div class="card">
         <p>Je vous recommande de télécharger l'éditeur de code VS Code pour vous mettre au travail.</p>
+    </div>
+    <div class="card">
+        <p>Deadline le vendredi 03 mai a 23h59 !</p>
     </div>
     <div class="card">
         <p>Bonne chance famille !!!</p>
@@ -81,7 +90,7 @@ function typeEffect(element, speed) {
 }
 
 document.addEventListener("DOMContentLoaded", async function(event) {
-  var speed = 10;
+  var speed = 8;
   var title = document.querySelector('h1');
   var cards = document.querySelectorAll('.card');
 
@@ -91,7 +100,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
   for (let i = 0; i < cards.length; i++) {
     var paragraphs = cards[i].querySelectorAll('p');
-    if (!cards[i].classList.contains('centered-card')) { // Exclure la nouvelle carte centrée
+    if (!cards[i].classList.contains('centered-card')) { 
       for (let paragraph of paragraphs) {
         paragraph.style.display = "inline-block";
         await typeEffect(paragraph, speed);
